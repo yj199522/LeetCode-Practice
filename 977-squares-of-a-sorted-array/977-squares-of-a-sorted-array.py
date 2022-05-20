@@ -3,7 +3,7 @@ class Solution:
         left, right, result = 0, len(nums) - 1, [] * len(nums)
         
         while(left <= right):
-            if(abs(nums[left]) >= abs(nums[right])):
+            if(abs(nums[left]) > abs(nums[right])):
                 result.append(nums[left] ** 2)
                 left+=1
             else:
