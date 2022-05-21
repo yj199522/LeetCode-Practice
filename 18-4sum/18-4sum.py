@@ -6,7 +6,6 @@ class Solution:
             return [nums]
         result = []
         nums = sorted(nums)
-        print(nums)
         for i in range(len(nums) - 3):
             if i > 0 and nums[i] == nums[i-1]:
                 continue
