@@ -16,14 +16,6 @@ class Solution:
         while i < len(s):
             if s[i] in bracket:
                 check.append(bracket[s[i]])
-            # elif s[i] in closeBrak:
-            #     if len(check) == 0:
-            #         return False
-            #     checkBrackIndex = openBrak.index(check[-1])
-            #     closeBrackIndex = closeBrak.index(s[i])
-            #     if closeBrackIndex != checkBrackIndex:
-            #         return False
-            #     check.pop()
             else:
                 if len(check)==0 or s[i]!=check[-1]:
                     return False
