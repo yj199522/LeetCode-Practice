@@ -13,7 +13,7 @@ class Solution:
         
         result = ListNode()
         prevList = result
-        while head:
+        while head and head.next:
             if head.next is not None:
                 prevList.next = head.next
                 head.next = head.next.next
