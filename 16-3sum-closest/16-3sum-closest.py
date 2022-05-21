@@ -1,7 +1,7 @@
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
-        if len(nums) < 3:
-            return 0
+        if len(nums) <= 3:
+            return sum(nums)
         result = 10**23
         nums = sorted(nums)
         for i in range(len(nums)-2):
