@@ -18,7 +18,6 @@ class Solution:
         prevList = result
         
         while list1 and list2:
-            print(list1)
             if list1.val <= list2.val:
                 prevList.next = list1
                 list1 = list1.next
