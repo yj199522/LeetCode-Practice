@@ -3,18 +3,15 @@ class Solution:
         if n == 1:
             return '1'
         
-        result = '1'
-        
-        for i in range(1, n):
-            count = 1
-            data = '' 
-            for j in range(len(result)):
-                if j == len(result) - 1 or result[j] != result[j+1]:
-                    data+= str(count)+result[j]
-                    count = 1
-                else:
-                    count+=1
-            result = data
+        prevData = self.countAndSay(n-1)
+        result = ''
+        count = 1
+        for j in range(len(prevData)):
+            if j == len(prevData) - 1 or prevData[j] != prevData[j+1]:
+                result+= str(count)+prevData[j]
+                count = 1
+            else:
+                count+=1
         return result
 #         if n == 1:
 #             return '1'
