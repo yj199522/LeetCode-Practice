@@ -10,13 +10,7 @@ class Solution:
             while(left<right):
                 sums = nums[i] + nums[left] + nums[right]
                 nearest=abs(target - sums)
-                if result is 10**23:
-                    result = nums[i] + nums[left] + nums[right]
-                    if result < target:
-                        left+=1
-                    else:
-                        right-=1
-                elif nearest <= abs(target - result):
+                if nearest <= abs(target - result) or result is 10**23:
                     result = sums
                     if result < target:
                         left+=1
