@@ -4,10 +4,8 @@ class Solution:
             return 0
         result = 0
         for i in range(len(s)):
-            left = right = i
-            result+=self.helper(s,left,right)
-            left, right = i, i+1
-            result+=self.helper(s,left,right)
+            result+=self.helper(s,i,i)
+            result+=self.helper(s,i,i+1)
         return result
     
     def helper(self,s,left,right):
