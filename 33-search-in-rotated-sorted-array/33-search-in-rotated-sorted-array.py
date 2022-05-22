@@ -15,5 +15,5 @@ class Solution:
                 if(nums[mid] < target <= nums[right]):
                     left = mid + 1
                 else:
-                    right = right -1
+                    right = mid -1
         return -1
