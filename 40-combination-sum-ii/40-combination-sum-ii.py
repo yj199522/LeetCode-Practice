@@ -20,4 +20,3 @@ class Solution:
                 subSet.pop()
         traverse(0, 0)
         return res
-        # return arr
