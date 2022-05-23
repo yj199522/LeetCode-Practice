@@ -1,11 +1,6 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
-        if newInterval is None:
-            return intervals
-        if intervals is None:
-            return [newInterval]
         result = []
-        
         for i in range(len(intervals)):
             if newInterval[1] < intervals[i][0]:
                 result.append(newInterval)
