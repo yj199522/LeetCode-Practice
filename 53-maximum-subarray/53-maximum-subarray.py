@@ -7,7 +7,8 @@ class Solution:
             if curr_sum<0:
                 curr_sum = 0
             curr_sum+=i
-            total = max(curr_sum, total)
+            if curr_sum > total:
+                total = curr_sum
         return total
             
         
