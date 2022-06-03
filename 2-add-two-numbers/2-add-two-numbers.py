@@ -26,6 +26,6 @@ class Solution:
             carry = digit // 10
         
         if carry:
-            dummy.next = ListNode(1)
+            dummy.next = ListNode(carry)
         
         return result.next
