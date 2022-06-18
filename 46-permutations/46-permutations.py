@@ -6,7 +6,6 @@ class Solution:
     
     def permuteHelper(self, nums, start, end, result):
         if start==end:
-            # print(start, end)
             result.append(list(nums))
             return 
         for i in range(start, end):
