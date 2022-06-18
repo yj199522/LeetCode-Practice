@@ -12,6 +12,7 @@ class Solution:
             arr = self.swap(nums, i, start)
             self.permuteHelper(nums, start+1, end, result)
             arr = self.swap(nums, i, start)
+            
     def swap(self, nums, start, end):
         if start == end:
             return nums
